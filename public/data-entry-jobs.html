@@ -57,120 +57,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <section class="flex items-center justify-center p-4 bg-orange-100">
-            <div class="w-full max-w-5xl space-y-4">
-                <div>
-                    <div class="flex items-center justify-center p-4 py-4">
-                        <!-- BEGIN ElasticSendy Signup Form -->
-                        <!-- START - We recommend to place the below code in head tag of your website html  -->
-                        <style type="text/css">
-                            .mpx_error {
-                                color: red !important;
-                            }
-                        </style>
-
-                        <script type="text/javascript">
-                            function mpx_submitSignupForm(event) {
-                                event.preventDefault();
-                                let formEle = event.target;
-                                // disable submit button to prevent more than one click.
-                                document.getElementById("mpx_submit_btn").disabled = true;      // clear all the previous request error messages.
-                                let allErrorElements = document.getElementsByClassName("mpx_error");
-                                [].forEach.call(allErrorElements, (element) => {
-                                    element.innerHTML = "";
-                                });
-                                // submit the form.
-                                fetch(formEle.action, {
-                                    method: formEle.method,
-                                    redirect: 'follow',
-                                    mode: 'cors',
-                                    headers: {
-                                        'Content-Type': 'application/x-www-form-urlencoded'
-                                    },
-                                    body: new URLSearchParams(new FormData(formEle))
-                                }).then((response) => response.json())
-                                    .then((json) => {
-                                        // enable submit button.
-                                        document.getElementById("mpx_submit_btn").disabled = false; if (json.data && json.data.field_errors) {
-                                            Object.keys(json.data.field_errors).forEach((key, i) => {
-                                                document.getElementById("mpx_error_" + key).innerHTML = json.data.field_errors[key];
-                                            })
-                                        }
-                                        if (json.error && json.error.message) {
-                                            document.getElementById("mpx_error_global").innerHTML = json.error.message;
-                                        }
-                                        if (json.data.add_success) {
-                                            // hide the input elements container
-                                            document.getElementById("mpx_input_elmts_bx").style.visibility = "hidden";
-                                            document.getElementById("mpx_success_box").style.visibility = "visible";
-                                            if (json.data.add_success_message) {
-                                                document.getElementById("mpx_success_box").innerHTML = json.data.add_success_message;
-                                            }
-                                            if (json.data.add_success_redirect_url) {
-                                                // redirect.
-                                                window.location = json.data.add_success_redirect_url;
-                                            }
-                                        }
-                                    })
-                            }
-                        </script>
-
-                        <!-- END - We recommend to place the below code in head tag of your website html  -->
-                        <div class="w-full max-w-md space-y-4">
-                            <div class="w-full p-4 bg-white border rounded shadow-lg">
-                                <form method="post"
-                                    action="https://webform.elasticsendy.com/api/rest/signup-forms-pub/v3/MTU1MDAwMjAwMDAwNzcxNA==/add-contact"
-                                    onsubmit="mpx_submitSignupForm(event)">
-                                    <div class="">
-                                        <div id="mpx_error_global" class="mb-1 text-base text-red-600 mpx_error">
-                                        </div>
-                                        <div class="relative">
-                                            <div id="mpx_success_box"
-                                                class="absolute left-0 invisible mb-1 text-base text-black top-1/3">
-                                            </div>
-                                            <div id="mpx_input_elmts_bx" class="relative visible space-y-6">
-                                                <div>
-                                                    <h2 class="text-2xl font-bold text-center">REGISTER NOW</h2>
-                                                </div>
-                                                <div class="block">
-                                                    <div class="mb-1 text-base text-gray-600">
-                                                        Enter your name *
-                                                    </div>
-                                                    <div>
-                                                        <input type="text"
-                                                            class="w-full p-2 text-base border rounded focus:outline-none focus:ring-orange-600 focus:border-orange-600"
-                                                            name="mpx_param_name" placeholder="Name" required />
-                                                    </div>
-                                                    <div id="mpx_error_mpx_param_name"
-                                                        class="mb-1 text-base text-black mpx_error"></div>
-                                                </div>
-                                                <div class="block">
-                                                    <div class="mb-1 text-base text-gray-600">
-                                                        Enter your email address to subscribe *
-                                                    </div>
-                                                    <div>
-                                                        <input type="email"
-                                                            class="w-full p-2 text-base border rounded focus:outline-none focus:ring-orange-600 focus:border-orange-600"
-                                                            name="mpx_param_email" placeholder="Email" required />
-                                                    </div>
-                                                    <div id="mpx_error_mpx_param_email"
-                                                        class="mb-1 text-base text-black mpx_error"></div>
-                                                </div>
-                                                <div class="my-4">
-                                                    <button id="mpx_submit_btn" type="submit"
-                                                        class="w-full px-6 py-3 text-base text-white bg-orange-600 border-0 rounded cursor-pointer">Subscribe</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- END ElasticSendy Signup Form -->
-
-                    </div>
+                <div class="flex items-center justify-center pt-6">
+                    <button class="px-8 py-4 font-bold text-white bg-orange-600 rounded">REGISTER NOW</button>
                 </div>
             </div>
         </section>
@@ -213,6 +101,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="flex items-center justify-center pt-6">
+                    <button class="px-8 py-4 font-bold text-white bg-orange-600 rounded">REGISTER NOW</button>
+                </div>
             </div>
         </section>
         <section class="flex items-center justify-center p-4 py-8 lg:py-12">
@@ -225,6 +116,21 @@
                     <p><span class="font-bold text-orange-600">Competitive Pay:</span> While data entry jobs may not pay as much as other professions, they typically offer competitive hourly rates or per-project rates. Some data entry jobs also offer incentives for fast and accurate work, allowing individuals to maximize their earnings.</p>
                     <p><span class="font-bold text-orange-600">Skill Development:</span> Data entry jobs provide an opportunity to develop and improve various skills, including typing speed and accuracy, attention to detail, and computer proficiency. These skills can be valuable in other professions and can help individuals advance their careers.</p>
                 </div>
+            </div>
+        </section>
+        <section class="flex items-center justify-center p-4 py-8 bg-orange-100 lg:py-12">
+            <div class="w-full max-w-4xl space-y-4">
+                <h3 class="text-xl font-bold text-gray-800 lg:text-3xl"> Know more about <span
+                    class="text-orange-600">Other Categories</span></h3>
+                    <ul class="flex flex-wrap items-center gap-6 pt-4">
+                        <li><a href="#" class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Data Entry Jobs</a></li>
+                        <li><a href="#" class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Form Filling Jobs</a></li>
+                        <li><a href="#" class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Copy Paste Jobs</a></li>
+                        <li><a href="#" class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Writing Jobs</a></li>
+                        <li><a href="#" class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Proff Reading and Editing Jobs</a></li>
+                        <li><a href="#" class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Translation Jobs</a></li>
+                    
+                    </ul>
             </div>
         </section>
         <section class="w-full px-4 pt-12 lg:p-4 lg:py-12">
