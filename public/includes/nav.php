@@ -1,16 +1,4 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav</title>
-    <link href="output.css" rel="stylesheet">    
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer=""></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    <div x-cloak x-data="{isSideMenuOpen:false}">
+<div x-cloak x-data="{isSideMenuOpen:false}">
         
     <!--Mobile Nav-->
     <div x-show="isSideMenuOpen" x-transition:enter="transition ease-in-out duration-150"
@@ -32,42 +20,42 @@
         <ul class="flex flex-col font-semibold text-gray-800">
             <!-- menu with icon -->
             <li class="font-semibold">
-                <a href="index.html" class="flex items-center px-4 py-2">
+                <a href="index.php" class="flex items-center px-4 py-2">
                     Home
                 </a>
             </li>
             <li class="font-semibold">
-                <a href="data-entry-jobs.html" class="flex items-center px-4 py-2">
+                <a href="data-entry-jobs.php" class="flex items-center px-4 py-2">
                     Data Entry Jobs
                 </a>
             </li>
             <li class="font-semibold">
-                <a href="form-filling-jobs.html" class="flex items-center px-4 py-2">
+                <a href="form-filling-jobs.php" class="flex items-center px-4 py-2">
                     Form Filling Jobs
                 </a>
             </li>
             <li class="font-semibold">
-                <a href="copy-paste-jobs.html" class="flex items-center px-4 py-2">
+                <a href="copy-paste-jobs.php" class="flex items-center px-4 py-2">
                     Copy Paste Jobs
                 </a>
             </li>
             <li class="font-semibold">
-                <a href="writing-jobs.html" class="flex items-center px-4 py-2">
+                <a href="writing-jobs.php" class="flex items-center px-4 py-2">
                     Writing Jobs
                 </a>
             </li>
             <li class="font-semibold">
-                <a href="proofreading-editing-jobs.html" class="flex items-center px-4 py-2">
+                <a href="proofreading-editing-jobs.php" class="flex items-center px-4 py-2">
                     ProffReading & Editing Jobs
                 </a>
             </li>
             <li class="font-semibold">
-                <a href="translation-jobs.html" class="flex items-center px-4 py-2">
+                <a href="translation-jobs.php" class="flex items-center px-4 py-2">
                     Translation Jobs
                 </a>
             </li>
             <li class="font-semibold">
-                <a href="register.html" class="flex items-center px-4 py-2">
+                <a href="register.php" class="flex items-center px-4 py-2">
                     Register
                 </a>
             </li>
@@ -89,7 +77,7 @@
                             <li class="relative px-4">
                                 <div>
                                     <div class="relative flex items-center hover:text-orange-600">
-                                        <a href="index.html">Home</a>
+                                        <a href="index.php">Home</a>
                                     </div>
                                 </div>
                             </li>
@@ -100,32 +88,32 @@
                                     </button>
                                     <ul x-show="isOpen" @click.away="isOpen = false" class="absolute right-0 z-20 py-1 mt-2 overflow-hidden font-normal bg-white border rounded shadow w-72">
                                         <li class="font-semibold">
-                                            <a href="data-entry-jobs.html" class="flex items-center px-4 py-2 hover:text-orange-600">
+                                            <a href="data-entry-jobs.php" class="flex items-center px-4 py-2 hover:text-orange-600">
                                                 Data Entry Jobs
                                             </a>
                                         </li>
                                         <li class="font-semibold">
-                                            <a href="form-filling-jobs.html" class="flex items-center px-4 py-2 hover:text-orange-600">
+                                            <a href="form-filling-jobs.php" class="flex items-center px-4 py-2 hover:text-orange-600">
                                                 Form Filling Jobs
                                             </a>
                                         </li>
                                         <li class="font-semibold">
-                                            <a href="copy-paste-jobs.html" class="flex items-center px-4 py-2 hover:text-orange-600">
+                                            <a href="copy-paste-jobs.php" class="flex items-center px-4 py-2 hover:text-orange-600">
                                                 Copy Paste Jobs
                                             </a>
                                         </li>
                                         <li class="font-semibold">
-                                            <a href="writing-jobs.html" class="flex items-center px-4 py-2 hover:text-orange-600">
+                                            <a href="writing-jobs.php" class="flex items-center px-4 py-2 hover:text-orange-600">
                                                 Writing Jobs
                                             </a>
                                         </li>
                                         <li class="font-semibold">
-                                            <a href="proofreading-editing-jobs.html" class="flex items-center px-4 py-2 hover:text-orange-600">
+                                            <a href="proofreading-editing-jobs.php" class="flex items-center px-4 py-2 hover:text-orange-600">
                                                 ProffReading & Editing Jobs
                                             </a>
                                         </li>
                                         <li class="font-semibold">
-                                            <a href="translation-jobs.html" class="flex items-center px-4 py-2 hover:text-orange-600">
+                                            <a href="translation-jobs.php" class="flex items-center px-4 py-2 hover:text-orange-600">
                                                 Translation Jobs
                                             </a>
                                         </li>
@@ -135,7 +123,7 @@
                             <li class="relative px-4">
                                 <div>
                                     <div class="relative flex items-center hover:text-orange-600">
-                                        <a href="#">Register</a>
+                                        <a href="register.php">Register</a>
                                     </div>
                                 </div>
                             </li>
@@ -158,5 +146,3 @@
     </div>
 </div>
     </div>
-</body>
-</html>

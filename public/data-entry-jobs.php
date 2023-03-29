@@ -4,22 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Data Entry Jobs - Easyonlinehomejobs</title>
     <link href="output.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <?php include_once 'includes/header.php' ?>
 </head>
 
 <body>
-    <header class="flex flex-col items-center justify-between gap-4 p-4 border-b lg:flex-row">
-        <div>
-            <img src="img/easy-online-home-jobs-logo.png" alt="">
-        </div>
-        <ul class="flex items-center gap-4">
-            <li><a class="font-semibold text-gray-600 hover:text-orange-600" href="index.html">Home</a></li>
-            <li><a class="font-semibold text-gray-600 hover:text-orange-600" href="">Browse Jobs</a></li>
-            <li><a class="font-semibold text-gray-600 hover:text-orange-600" href="register.html">Register</a></li>
-        </ul>
-    </header>
+<?php include_once 'includes/body.php' ?>
+    <?php include_once 'includes/nav.php' ?>
     <main>
         <section class="flex flex-col items-center justify-center">
             <div class="px-4 py-8 lg:px-8 lg:py-12">
@@ -57,7 +50,7 @@
                     </ul>
                 </div>
                 <div class="flex items-center justify-center pt-6">
-                   <a href="register.html">
+                   <a href="register.php">
                     <button class="px-8 py-4 font-bold text-white bg-orange-600 rounded">REGISTER NOW</button>
                 </a>
                 
@@ -113,7 +106,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center pt-6">
-                    <a href="register.html">
+                    <a href="register.php">
                     <button class="px-8 py-4 font-bold text-white bg-orange-600 rounded">REGISTER NOW</button>
                 </a>
                 </div>
@@ -150,22 +143,22 @@
                 <h3 class="text-xl font-bold text-gray-800 lg:text-3xl"> Know more about <span
                         class="text-orange-600">Other Categories</span></h3>
                         <ul class="flex flex-wrap items-center gap-6 pt-4">
-                            <li><a href="data-entry-jobs.html"
+                            <li><a href="data-entry-jobs.php"
                                     class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Data
                                     Entry Jobs</a></li>
-                            <li><a href="form-filling-jobs.html"
+                            <li><a href="form-filling-jobs.php"
                                     class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Form
                                     Filling Jobs</a></li>
-                            <li><a href="copy-paste-jobs.html"
+                            <li><a href="copy-paste-jobs.php"
                                     class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Copy
                                     Paste Jobs</a></li>
-                            <li><a href="writing-jobs.html"
+                            <li><a href="writing-jobs.php"
                                     class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Writing
                                     Jobs</a></li>
-                            <li><a href="proofreading-editing-jobs.html"
+                            <li><a href="proofreading-editing-jobs.php"
                                     class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Proff
                                     Reading and Editing Jobs</a></li>
-                            <li><a href="translation-jobs.html"
+                            <li><a href="translation-jobs.php"
                                     class="px-4 py-2 font-semibold border border-gray-600 rounded-full hover:border-orange-600 hover:text-orange-600">Translation
                                     Jobs</a></li>
                         </ul>
@@ -381,21 +374,13 @@
             </div>
 
             <div class="flex items-center justify-center p-4 lg:pt-6">
-                <a href="register.html">
+                <a href="register.php">
                     <button class="px-8 py-4 font-bold text-white bg-orange-600 rounded">REGISTER NOW</button>
                 </a>
             </div>
         </section>
     </main>
-    <footer class="p-4 text-white bg-gray-600">
-        <div class="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
-            <p class="text-center lg:text-left">Copyright © 2023 — All Rights Reserved for EasyOnlineHomeJobs</p>
-            <ul class="flex items-center gap-4">
-                <li><a class="hover:underline" href="">Privacy Policy</a></li>
-                <li><a class="hover:underline" href="">Terms & Conditions</a></li>
-            </ul>
-        </div>
-    </footer>
+    <?php include_once 'includes/footer.php' ?>
 </body>
 
 </html>

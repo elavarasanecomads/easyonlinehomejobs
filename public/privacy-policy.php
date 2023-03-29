@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Privacy Policy - Easyonlinehomejobs</title>
     <link href="output.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <?php include_once 'includes/header.php' ?>
 </head>
 
 <body>
+<?php include_once 'includes/body.php' ?>
+    <?php include_once 'includes/nav.php' ?>
     <section class="flex items-center justify-center p-4">
         <div class="w-full max-w-4xl space-y-4">
             <h1 class="pb-6 text-2xl font-bold text-gray-800 lg:text-4xl">Privacy Policy</h1>
@@ -55,6 +58,7 @@
                 Compliance team.</p>
         </div>
     </section>
+    <?php include_once 'includes/footer.php' ?>
 </body>
 
 </html>

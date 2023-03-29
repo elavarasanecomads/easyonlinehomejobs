@@ -5,19 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <?php include_once 'includes/header.php' ?>
+    <title>Easyonlinehomejobs</title>
 </head>
 
 <body>
-    <header class="flex flex-col items-center justify-between gap-4 p-4 border-b lg:flex-row">
-        <div>
-            <img src="img/easy-online-home-jobs-logo.png" alt="">
-        </div>
-        <ul class="flex items-center gap-4">
-            <li><a class="font-semibold text-gray-600 hover:text-orange-600" href="index.html">Home</a></li>
-            <li><a class="font-semibold text-gray-600 hover:text-orange-600" href="">Browse Jobs</a></li>
-            <li><a class="font-semibold text-gray-600 hover:text-orange-600" href="register.html">Register</a></li>
-        </ul>
-    </header>
+<?php include_once 'includes/body.php' ?>
+    <?php include_once 'includes/nav.php' ?>
     <main>
         <section class="flex items-center justify-center p-4 py-4 lg:py-12">
             <div class="w-full max-w-4xl space-y-4">
@@ -36,7 +31,7 @@
                         class="text-orange-600">Job Categories</span> </h1>
                 <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
                     <div>
-                        <a href="data-entry-jobs.html">
+                        <a href="data-entry-jobs.php">
                             <div class="p-4 bg-white rounded">
                                 <div class="flex flex-col items-center justify-center space-y-1">
                                     <div class="p-4 bg-orange-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +48,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="form-filling-jobs.html">
+                        <a href="form-filling-jobs.php">
                             <div class="p-4 bg-white rounded">
                                 <div class="flex flex-col items-center justify-center space-y-1">
                                     <div class="p-4 bg-orange-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +65,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="copy-paste-jobs.html">
+                        <a href="copy-paste-jobs.php">
                             <div class="p-4 bg-white rounded">
                                 <div class="flex flex-col items-center justify-center space-y-1">
                                     <div class="p-4 bg-orange-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +82,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="writing-jobs.html">
+                        <a href="writing-jobs.php">
                             <div class="p-4 bg-white rounded">
                                 <div class="flex flex-col items-center justify-center space-y-1">
                                     <div class="p-4 bg-orange-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +99,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="proofreading-editing-jobs.html">
+                        <a href="proofreading-editing-jobs.php">
                             <div class="p-4 bg-white rounded">
                                 <div class="flex flex-col items-center justify-center space-y-1">
                                     <div class="p-4 bg-orange-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +116,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="translation-jobs.html">
+                        <a href="translation-jobs.php">
                             <div class="p-4 bg-white rounded">
                                 <div class="flex flex-col items-center justify-center space-y-1">
                                     <div class="p-4 bg-orange-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +190,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center pt-6">
-                    <a href="register.html">
+                    <a href="register.php">
                     <button class="px-8 py-4 font-bold text-white bg-orange-600 rounded">REGISTER NOW</button>
                 </a>
                 </div>
@@ -283,21 +278,13 @@
                     </div>
             </div>
             <div class="flex items-center justify-center pt-6">
-                <a href="register.html">
+                <a href="register.php">
                     <button class="px-8 py-4 font-bold text-white bg-orange-600 rounded">REGISTER NOW</button>
                 </a>
             </div>
-        </section>
-        <footer class="p-4 text-white bg-gray-600">
-            <div class="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
-                <p class="text-center lg:text-left">Copyright © 2023 — All Rights Reserved for EasyOnlineHomeJobs</p>
-                <ul class="flex items-center gap-4">
-                    <li><a class="hover:underline" href="">Privacy Policy</a></li>
-                    <li><a class="hover:underline" href="">Terms & Conditions</a></li>
-                </ul>
-            </div>
-        </footer>
+        </section>       
     </main>
+    <?php include_once 'includes/footer.php' ?>
 </body>
 
 </html>
